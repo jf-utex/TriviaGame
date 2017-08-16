@@ -2,81 +2,135 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>TriviaGame</title>
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- Javascript -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 	<!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 </head>
+
+
 <body>
 <div class="media">
   <img class="d-flex align-self-center mr-3" src="..." alt="Generic placeholder image">
   <div class="media-body">
-    <h5 class="mt-0">Center-aligned media</h5>
-    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-    <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+  <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Welcome to Trivia night!</h1>
+    <p class="lead">You will have 60 seconds to answer 6 questions, when the timer runs up, your stats will be displayed. Good Luck!</p>
   </div>
-</div>
+	</div>
+   
+  </div>
+</div> <!-- closing div for media -->
 
+<div class="panel panel-default">
+  	<div class="panel-heading">The Clocks'a Tickin'</div>
+  	<div class="panel-body">
+  		<span id="timer"></span>
+	</div> <!--closing div for panel-body-->
+</div><!--closing div for panel-->
+
+
+
+<br>
 <div class="container">
-<div class="row">
-
-<span id="timer"></span>
-
-	<div class="row">Question 1
-	<br>
-	  <div class="col-6 col-md-4">
-		<button type="button" class="btn btn-secondary">Answer 1</button></div>
-	  <div class="col-6 col-md-4">
-	  	<button type="button" class="btn btn-secondary">Answer 2</button></div>
-	  <div class="col-6 col-md-4">
-	  	<button type="button" class="btn btn-secondary">Answer 3</button></div>
-	</div>
+	<div class="row">
+		<div class="row">Question 1
+		<br>
+	  	<div class="col-md-12">
+			<form>
+			  <input type="radio" name="q1" value="wrong"> Male<br>
+			  <input type="radio" name="q1" value="right"> Female<br>
+			  <input type="radio" name="q1" value="wrong"> Other
+			</form> <!-- close for form Q1 -->
+		</div> <!-- close for class column Q1 -->
+		</div> <!-- close for class row Q1 -->
+	</div> <!-- close for class row Q1-->
 	
-
-
-	<br>
-	<div class="row">Question 2
-	<br>
-	  <div class="col-6 col-md-4">
-		<button type="button" class="btn btn-secondary">Answer 1</button></div>
-	  <div class="col-6 col-md-4">
-	  	<button type="button" class="btn btn-secondary">Answer 2</button></div>
-	  <div class="col-6 col-md-4">
-	  	<button type="button" class="btn btn-secondary">Answer 3</button></div>
-	</div>
-	<br>
-	<div class="row">Question 3
-	<br>
-	  <div class="col-6 col-md-4">
-		<button type="button" class="btn btn-secondary">Answer 1</button></div>
-	  <div class="col-6 col-md-4">
-	  	<button type="button" class="btn btn-secondary">Answer 2</button></div>
-	  <div class="col-6 col-md-4">
-	  	<button type="button" class="btn btn-secondary">Answer 3</button></div>
-	</div>
-	<br>
-	<div class="row">Question 4
-	<br>
-	  <div class="col-6 col-md-4">
-		<button type="button" class="btn btn-secondary">Answer 1</button></div>
-	  <div class="col-6 col-md-4">
-	  	<button type="button" class="btn btn-secondary">Answer 2</button></div>
-	  <div class="col-6 col-md-4">
-	  	<button type="button" class="btn btn-secondary">Answer 3</button></div>
-	</div>
-
-  
-
-
-
-
-
+	<div class="row">
+		<div class="row">Question 2
+		<br>
+	  	<div class="col-md-12">
+			<form>
+			  <input type="radio" name="q2" value="male"> Male<br>
+			  <input type="radio" name="q2" value="female"> Female<br>
+			  <input type="radio" name="q2" value="other"> Other
+			</form><!-- close for form Q2 -->
+		</div><!-- close for class column Q2 -->
+	  	</div> <!-- close for class row Q2 -->
+	</div><!-- close for class row Q2-->
 	
-	
+	<div class="row">
+		<div class="row">Question 3
+		<br>
+	  	<div class="col-md-12">
+			<form>
+			  <input type="radio" name="q3" value="male"> Male<br>
+			  <input type="radio" name="q3" value="female"> Female<br>
+			  <input type="radio" name="q3" value="other"> Other
+			</form><!-- close for form Q3 -->
+		</div><!-- close for class column Q3 -->
+	  	</div> <!-- close for class row Q3 -->
+	</div><!-- close for class row Q3-->
+
+	<div class="row">
+		<div class="row">Question 4
+		<br>
+	  	<div class="col-md-12">
+			<form>
+			  <input type="radio" name="q4" value="male"> Male<br>
+			  <input type="radio" name="q4" value="female"> Female<br>
+			  <input type="radio" name="q4" value="other"> Other
+			</form><!-- close for form Q4 -->
+		</div><!-- close for class column Q4 -->
+	  	</div> <!-- close for class row Q4 -->
+	</div><!-- close for class row Q4-->
+
+	<div class="row">
+		<div class="row">Question 5
+		<br>
+	  	<div class="col-md-12">
+			<form>
+			  <input type="radio" name="q5" value="male"> Male<br>
+			  <input type="radio" name="q5" value="female"> Female<br>
+			  <input type="radio" name="q5" value="other"> Other
+			</form><!-- close for form Q5 -->
+		</div><!-- close for class column Q5 -->
+	  	</div> <!-- close for class row Q5 -->
+	</div><!-- close for class row Q4-->
+
+	<div class="row">
+		<div class="row">Question 6
+		<br>
+	  	<div class="col-md-12">
+			<form>
+			  <input type="radio" name="q6" value="male"> Male<br>
+			  <input type="radio" name="q6" value="female"> Female<br>
+			  <input type="radio" name="q6" value="other"> Other
+			</form><!-- close for form Q6 -->
+		</div><!-- close for class column Q6 -->
+	  	</div> <!-- close for class row Q6 -->
+	</div><!-- close for class row Q4-->
+<br>
+<br>
+<!-- Stats calculated -->
+
+
+
+<div class="panel panel-default">
+  	<div class="panel-heading">Your Stats</div>
+  	<div class="panel-body">
+  		<p>Correct Answers: <span id="correct"></span></p>
+    	<p>Incorrect Answers: <span id="incorrect"></span></p>
+    	<p>Unaswered: <span id="unanswered"></span></p>
+	</div> <!--closing div for panel-body-->
+</div><!--closing div for panel-->
+<div id="results">
+		
+</div>	
 	<!-- Script -->
 	<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
@@ -89,16 +143,10 @@
 
 
 <!-- You'll create a trivia form with multiple choice or true/false options (your choice).
+ -->
 
-The player will have a limited amount of time to finish the quiz.
 
-The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
-Don't let the player pick more than one answer per question.
-
-Don't forget to include a countdown timer. -->
-
-<!-- set timer for total game to play
-
+<!-- 
 
   set timeout
 function()[
