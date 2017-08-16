@@ -1,0 +1,8 @@
+body{
+	background-color: orange;
+};
+
+.jumbotron{
+	background-image: url("assets/images/triviabackground.jpg");
+
+}

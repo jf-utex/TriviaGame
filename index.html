@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 	<!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 
@@ -18,22 +19,21 @@
   <div class="media-body">
   <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-3">Welcome to Trivia night!</h1>
+    <h1 class="display-3">Welcome to Trivia Night!</h1>
     <p class="lead">You will have 60 seconds to answer 6 questions, when the timer runs up, your stats will be displayed. Good Luck!</p>
-  </div>
-	</div>
+  </div> <!-- closing div for container -->
+	</div> <!-- closing div for jumbotron -->
    
-  </div>
+  </div> <!-- closing div for media-body -->
 </div> <!-- closing div for media -->
 
 <div class="panel panel-default">
   	<div class="panel-heading">The Clocks'a Tickin'</div>
   	<div class="panel-body">
   		<span id="timer"></span>
+  		
 	</div> <!--closing div for panel-body-->
 </div><!--closing div for panel-->
-
-
 
 <br>
 <div class="container">
@@ -42,9 +42,9 @@
 		<br>
 	  	<div class="col-md-12">
 			<form>
-			  <input type="radio" name="q1" value="wrong"> Male<br>
-			  <input type="radio" name="q1" value="right"> Female<br>
-			  <input type="radio" name="q1" value="wrong"> Other
+			  <input type="radio" name="questions" value="wrong"> wrong<br>
+			  <input type="radio" name="questions" value="right"> right<br>
+			  <input type="radio" name="questions" value="wrong"> wrong
 			</form> <!-- close for form Q1 -->
 		</div> <!-- close for class column Q1 -->
 		</div> <!-- close for class row Q1 -->
@@ -55,9 +55,9 @@
 		<br>
 	  	<div class="col-md-12">
 			<form>
-			  <input type="radio" name="q2" value="male"> Male<br>
-			  <input type="radio" name="q2" value="female"> Female<br>
-			  <input type="radio" name="q2" value="other"> Other
+			  <input type="radio" name="questions" value="right"> right<br>
+			  <input type="radio" name="questions" value="wrong"> wrong<br>
+			  <input type="radio" name="questions" value="wrong"> wrong
 			</form><!-- close for form Q2 -->
 		</div><!-- close for class column Q2 -->
 	  	</div> <!-- close for class row Q2 -->
@@ -68,9 +68,9 @@
 		<br>
 	  	<div class="col-md-12">
 			<form>
-			  <input type="radio" name="q3" value="male"> Male<br>
-			  <input type="radio" name="q3" value="female"> Female<br>
-			  <input type="radio" name="q3" value="other"> Other
+			  <input type="radio" name="questions" value="right"> right<br>
+			  <input type="radio" name="questions" value="wrong"> wrong<br>
+			  <input type="radio" name="questions" value="wrong"> wrong
 			</form><!-- close for form Q3 -->
 		</div><!-- close for class column Q3 -->
 	  	</div> <!-- close for class row Q3 -->
@@ -81,9 +81,9 @@
 		<br>
 	  	<div class="col-md-12">
 			<form>
-			  <input type="radio" name="q4" value="male"> Male<br>
-			  <input type="radio" name="q4" value="female"> Female<br>
-			  <input type="radio" name="q4" value="other"> Other
+			  <input type="radio" name="questions" value="wrong"> wrong<br>
+			  <input type="radio" name="questions" value="wrong"> wrong<br>
+			  <input type="radio" name="questions" value="right"> right
 			</form><!-- close for form Q4 -->
 		</div><!-- close for class column Q4 -->
 	  	</div> <!-- close for class row Q4 -->
@@ -94,9 +94,9 @@
 		<br>
 	  	<div class="col-md-12">
 			<form>
-			  <input type="radio" name="q5" value="male"> Male<br>
-			  <input type="radio" name="q5" value="female"> Female<br>
-			  <input type="radio" name="q5" value="other"> Other
+			  <input type="radio" name="questions" value="right"> right<br>
+			  <input type="radio" name="questions" value="wrong"> wrong<br>
+			  <input type="radio" name="questions" value="wrong"> wrong
 			</form><!-- close for form Q5 -->
 		</div><!-- close for class column Q5 -->
 	  	</div> <!-- close for class row Q5 -->
@@ -107,9 +107,9 @@
 		<br>
 	  	<div class="col-md-12">
 			<form>
-			  <input type="radio" name="q6" value="male"> Male<br>
-			  <input type="radio" name="q6" value="female"> Female<br>
-			  <input type="radio" name="q6" value="other"> Other
+			  <input type="radio" name="questions" value="wrong"> wrong<br>
+			  <input type="radio" name="questions" value="right"> right<br>
+			  <input type="radio" name="questions" value="wrong"> wrong
 			</form><!-- close for form Q6 -->
 		</div><!-- close for class column Q6 -->
 	  	</div> <!-- close for class row Q6 -->
