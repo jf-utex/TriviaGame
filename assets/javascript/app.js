@@ -14,21 +14,27 @@ function timer(){
   if (count <= 0)
   {
      clearInterval(counter);
-     //counter ended, do something here
+     $("#timer").html("You are out of time!")
      return;
-};
-//need to print something more than seconds remaining
-var correct=0;
-var wrong = 0;
+  }
 
-var selValue = $('input[name=questions]:checked').val();
-	if(questions == null){
-           unanswered++;
-   }else if (questions ==right){
-   			correct++;
-	}else(questions ==wrong){
-			incorrect++;
-	};
+  document.getElementById("timer").innerHTML=("You have "+ count + " secs remaining"); // watch for spelling
+
+  // same line with jquery:
+  // $("#timer").html("You have "+ count + " secs remaining");
+}
+//need to print something more than seconds remaining
+// var correct=0;
+// var wrong = 0;
+
+// var selValue = $('input[name=questions]:checked').val();
+// 	if(questions == null){
+//            unanswered++;
+//    }else if (questions ==right){
+//    			correct++;
+// 	}else(questions ==wrong){
+// 			incorrect++;
+// 	};
    
 //         }
 
@@ -83,8 +89,7 @@ var selValue = $('input[name=questions]:checked').val();
 
 
 //Do code for showing the number of seconds here
-  document.getElementById("timer").innerHTML=("You have "+ count + " secs remaining"); // watch for spelling
-}
+  
 
   
 
