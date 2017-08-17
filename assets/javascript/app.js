@@ -5,14 +5,13 @@ $( document ).ready(function() {
 });
 //amount of time left in game countdown
 
-
 var count=60; 
 //sets counter to run eery 1 second
 var counter=setInterval(timer, 1000); 
 //timer function to countdown
 function timer(){
-  count=count-1;
-  if (count <= 0)
+  count = count-1;
+  if (count === 0)
   {
      clearInterval(counter);
      $("#timer").html("You are out of time!")
