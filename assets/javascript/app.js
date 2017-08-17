@@ -1,13 +1,14 @@
 alert("Click the butten when you are ready to start the quiz");
+// A $( document ).ready() block.
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
 //amount of time left in game countdown
+
+
 var count=60; 
 //sets counter to run eery 1 second
 var counter=setInterval(timer, 1000); 
-//correct answer counter
-
-
-
-
 //timer function to countdown
 function timer(){
   count=count-1;
@@ -17,26 +18,52 @@ function timer(){
      $("#timer").html("You are out of time!")
      return;
   }
+      $("#timer").html("You have "+ count + " secs remaining");
+};
 
-  document.getElementById("timer").innerHTML=("You have "+ count + " secs remaining"); // watch for spelling
 
-  // same line with jquery:
-  // $("#timer").html("You have "+ count + " secs remaining");
-}
-//need to print something more than seconds remaining
-// var correct=0;
-// var wrong = 0;
+function finalScore(){//begin function
 
-// var selValue = $('input[name=questions]:checked').val();
-// 	if(questions == null){
-//            unanswered++;
-//    }else if (questions ==right){
-//    			correct++;
-// 	}else(questions ==wrong){
-// 			incorrect++;
-// 	};
-   
-//         }
+  //initialize the correct variable
+  var correct = 0;
+  var incorrect = 0;
+  var selectValue;
+
+  //store the collection of elements with the class name question
+  var questions = document.getElementsByClassName("question");
+
+  //the number of questions(elements with a class name of question)
+  var numOfQuestions = questions.length;
+
+//loop through the collection of elements with a question class
+for(var i = 0; i < questions.length; i++ ){//begin for loop
+
+ //get the value of the select element
+ selectValue = questions[i].options[questions[i].selectedIndex].value;
+
+  //if the value equals right
+  if(selectValue === "right"){//begin if then
+    //increment the correct variable
+    correct++;
+console.log(correct);
+  }else
+
+  (selectValue ==="wrong")
+    incorrect++;
+console.log(incorrect);
+  }//end if then
+
+}//end for loop
+
+
+
+
+
+
+
+
+
+
 
 // pseudo code
 // 	if q1=right correct++
@@ -53,44 +80,4 @@ function timer(){
 // if counter = 6 answers no unanswered if not 6-answered=unanswered
 
 
-
-
-
-
-
-
-
-
-
-// var q1answer = $(“input[name=q1]:checked”).val();
-//         if(q1answer == null){
-//             alert(“You didn’t anwer question #1”);
-//         }
-//         else if(q1answer == "right"){
-//             alert(“YOU WIN”);
-//         } else {
-//             alert(“NOPE, TRY AGAIN”);
-//         };
-
-// if (value=="wrong"){
-// 	incorrect.innerHTML++;
-
-// }else if (value=="right"){
-// 	correct.innerHTML++;
-
-// }else{
-// 	unanswered.innerHTML++;
-
-// };
-//incorrect counter
-// var incorrect=
-//unanswered question counter
-// var unanswered=
-
-
-//Do code for showing the number of seconds here
-  
-
-  
-
-
+// 

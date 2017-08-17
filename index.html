@@ -15,7 +15,7 @@
 
 <body>
 <div class="media">
-  <img class="d-flex align-self-center mr-3" src="..." alt="Generic placeholder image">
+  <img class="d-flex align-self-center mr-3" src="..." alt="">
   <div class="media-body">
   <div class="jumbotron jumbotron-fluid">
   <div class="container">
@@ -38,97 +38,32 @@
 <br>
 <div class="container">
 	<div class="row">
-		<div class="row">Question 1
-		<br>
+		<div class="row">1.  What does WD stand for in WD-40?
+			<br>
 	  	<div class="col-md-12">
-			<form>
-			  <input type="radio" name="questions" value="wrong"> wrong<br>
-			  <input type="radio" name="questions" value="right"> right<br>
-			  <input type="radio" name="questions" value="wrong"> wrong
-			</form> <!-- close for form Q1 -->
-		</div> <!-- close for class column Q1 -->
-		</div> <!-- close for class row Q1 -->
-	</div> <!-- close for class row Q1-->
-	
-	<div class="row">
-		<div class="row">Question 2
-		<br>
-	  	<div class="col-md-12">
-			<form>
-			  <input type="radio" name="questions" value="right"> right<br>
-			  <input type="radio" name="questions" value="wrong"> wrong<br>
-			  <input type="radio" name="questions" value="wrong"> wrong
-			</form><!-- close for form Q2 -->
-		</div><!-- close for class column Q2 -->
-	  	</div> <!-- close for class row Q2 -->
-	</div><!-- close for class row Q2-->
-	
-	<div class="row">
-		<div class="row">Question 3
-		<br>
-	  	<div class="col-md-12">
-			<form>
-			  <input type="radio" name="questions" value="right"> right<br>
-			  <input type="radio" name="questions" value="wrong"> wrong<br>
-			  <input type="radio" name="questions" value="wrong"> wrong
-			</form><!-- close for form Q3 -->
-		</div><!-- close for class column Q3 -->
-	  	</div> <!-- close for class row Q3 -->
-	</div><!-- close for class row Q3-->
-
-	<div class="row">
-		<div class="row">Question 4
-		<br>
-	  	<div class="col-md-12">
-			<form>
-			  <input type="radio" name="questions" value="wrong"> wrong<br>
-			  <input type="radio" name="questions" value="wrong"> wrong<br>
-			  <input type="radio" name="questions" value="right"> right
-			</form><!-- close for form Q4 -->
-		</div><!-- close for class column Q4 -->
-	  	</div> <!-- close for class row Q4 -->
-	</div><!-- close for class row Q4-->
-
-	<div class="row">
-		<div class="row">Question 5
-		<br>
-	  	<div class="col-md-12">
-			<form>
-			  <input type="radio" name="questions" value="right"> right<br>
-			  <input type="radio" name="questions" value="wrong"> wrong<br>
-			  <input type="radio" name="questions" value="wrong"> wrong
-			</form><!-- close for form Q5 -->
-		</div><!-- close for class column Q5 -->
-	  	</div> <!-- close for class row Q5 -->
-	</div><!-- close for class row Q4-->
-
-	<div class="row">
-		<div class="row">Question 6
-		<br>
-	  	<div class="col-md-12">
-			<form>
-			  <input type="radio" name="questions" value="wrong"> wrong<br>
-			  <input type="radio" name="questions" value="right"> right<br>
-			  <input type="radio" name="questions" value="wrong"> wrong
-			</form><!-- close for form Q6 -->
-		</div><!-- close for class column Q6 -->
-	  	</div> <!-- close for class row Q6 -->
-	</div><!-- close for class row Q4-->
+		  	<select class ="question" id="testValues1">
+		       <option value="right">Water Displacement</option>
+		       <option value="wrong">Wicked Drudgery</option>
+		       <option value="wrong">Wrench Doctor</option>
+	    	</select>
+		</div><!-- close for class column-->
+	  	</div> <!-- close for class row -->
+	</div><!-- close for class row-->
 <br>
 <br>
-<!-- Stats calculated -->
 
 
+<button type="button" onclick.finalScore()> Submit </button>
 
 <div class="panel panel-default">
-  	<div class="panel-heading">Your Stats</div>
+  	<div class="panel-heading">Your Stats
   	<div class="panel-body">
+  		<div id="scoreDisplay"></div>
   		<p>Correct Answers: <span id="correct"></span></p>
     	<p>Incorrect Answers: <span id="incorrect"></span></p>
     	<p>Unaswered: <span id="unanswered"></span></p>
 	</div> <!--closing div for panel-body-->
-</div><!--closing div for panel-->
-<div id="results">
+	</div><!--closing div for panel-->	
 		
 </div>	
 	<!-- Script -->
@@ -150,8 +85,7 @@
 
   set timeout
 function()[
-]
-timer to start on key up
+
 questions to answer with three choices
 	if incorrect choice selected, alert player "try again!"
 	if correct move to next question
